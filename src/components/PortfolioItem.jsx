@@ -4,9 +4,10 @@ import Portfolio from "./Portfolio";
 function PortfolioItem ({title, imgUrl, techStack, link}){
     return(
         <div>
-            <img src={imgUrl} />
+            <a href={link}> <img src={imgUrl} /> </a>
             <div>
                 <h3>{title}</h3>
+                <p>{techStack}</p>
             </div>
         </div>
     )
