@@ -1,20 +1,18 @@
-[
+export default [
     {
-        title: "",
-        imgUrl: "",
-        stack: [""],
-        link: ""
+        title: "ROAR",
+        imgUrl: "src/assets/lu_pic.jpg",
+        stack: ["R", "Shiny", "Python", "SQL", "AWS"],
+        link: "",
     },
-    {
-        title: "",
+    { title: "Minimal Portfolia Website",
         imgUrl: "",
-        stack: [""],
-        link: ""
+        stack: ["React", "Tailwindcss", "Vite"],
+        link: "",
     },
-    {
-        title: "",
-        imgUrl: "",
-        stack: [""],
-        link: ""
-    }
+    { title: "Simple Web Server",
+        imgUrl: "src/assets/web_server.jpg",
+        stack: ["C++"],
+        link: "",
+    },
 ]
