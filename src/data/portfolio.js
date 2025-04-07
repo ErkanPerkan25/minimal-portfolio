@@ -1,13 +1,13 @@
 export default [
     {
-        title: "ROAR",
+        title: "ROAR (Data Analytic Website)",
         imgUrl: "src/assets/lu_pic.jpg",
         stack: ["R", "Shiny", "Python", "SQL", "AWS"],
         link: "",
     },
     { title: "Minimal Portfolia Website",
-        imgUrl: "",
-        stack: ["React", "Tailwindcss", "Vite"],
+        imgUrl: "src/assets/portfolio.jpg",
+        stack: ["React", "Tailwindcss", "Vite", "JavaScript"],
         link: "",
     },
     { title: "Simple Web Server",
