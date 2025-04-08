@@ -1,7 +1,7 @@
 export default [
     {
         title: "ROAR (Data Analytic Website)",
-        imgUrl: "/assets/lu_pic.jpg",
+        imgUrl: "minimal-portfolio/assets/lu_pic.jpg",
         stack: ["R", "Shiny", "Python", "SQL", "AWS"],
         link: "",
     },
