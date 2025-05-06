@@ -8,7 +8,7 @@ export default [
             `Working data camps to teach high school kids topics of data analytics, which inspires new generations to data science technology and machine learning`
         ],
         location: "Saint Charles, MO",
-        time: "Jan. 2024 - Present",
+        time: "Jan. 2024 - May 2025",
     },
     {
         title:"IT-Technican",
