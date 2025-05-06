@@ -24,10 +24,10 @@ function App() {
 
     useEffect(()=>{
         if(theme === "dark") {
-            document.documentElement.classlist.add("dark");
+            document.documentElement.classList.add("dark");
         }
         else{
-            document.documentElement.classlist.remove("dark");
+            document.documentElement.classList.remove("dark");
         }
     }, [theme]);
 
