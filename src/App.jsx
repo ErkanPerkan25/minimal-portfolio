@@ -5,7 +5,6 @@ import Portfolio from "./components/Portfolio"
 import Experience from "./components/Experience"
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { document } from 'postcss'
 
 function App() {
     const [theme, setTheme] = useState(null);
