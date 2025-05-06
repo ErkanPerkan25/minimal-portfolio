@@ -6,7 +6,7 @@ function Intro(){
 
             <h1 className="text-7xl dark:text-white md:text-4xl mb-1 md:mb-3 font-bold">Eric Hansson</h1>
 
-            <p className="text-base md:mb-2">Student Athlete</p>
+            <p className="text-base md:mb-2">NCAA I&II Athlete, Student, Lead Intern</p>
 
             <p className="text-sm w-200 mb-2 md:mb-3">
             Hello there! My name is Eric, and I'm a senior at Lindenwood University studying in Computer Science.
