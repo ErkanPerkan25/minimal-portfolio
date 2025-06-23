@@ -5,7 +5,7 @@ function Contact(){
         <div className="flex flex-col items-center justify-center pt-5">
             <h2>Want to get in contact? Send me an email.</h2>
             <form action="https://getform.io/f/9cd7a7fa-4a01-4677-92ab-89e2d68829ae" method="POST"
-                className="grid grid-cols-1 w-125 pt-1">
+                className="grid grid-cols-1 w-80 md:w-100 lg:w-125 pt-1">
                 <input
                     name="name"
                     className="w-full h-12 border-1 rounded-md mt-3 p-1"

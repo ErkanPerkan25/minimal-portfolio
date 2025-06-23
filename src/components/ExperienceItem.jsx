@@ -2,7 +2,7 @@ import React from "react";
 
 function ExperienceItem({title, company, desc, location, time}){
     return(
-        <div className="w-175 h:40 sm:h-60 md:h-75 p-4 overflow-hidden">
+        <div className="w-90 md:w-130 lg:w-150 h:40 sm:h-60 md:h-75 p-4 overflow-hidden">
             <h3 className="font-bold">{title}</h3>
             <p>{company}, {location}</p>
             <p className="italic">{time}</p>
