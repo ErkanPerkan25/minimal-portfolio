@@ -20,7 +20,14 @@ export default [
     {
         title: "LogiQuest",
         imgUrl: "assets/logo.png",
-        stack: ["Java", "JavFX", "JSON"],
-        link: "",
+        stack: ["Java", "JavFX", "Maven"],
+        link: "https://github.com/AlexDorian7/dragon-score",
+    },
+    {
+        title: "CLI Utilites Program",
+        imgUrl: "assets/rust_crab.png",
+        stack: ["Rust"],
+        link: "https://github.com/ErkanPerkan25/cli_utilites",
     }
+
 ]

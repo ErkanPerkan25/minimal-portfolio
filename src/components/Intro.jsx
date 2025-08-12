@@ -3,10 +3,13 @@ import React from "react";
 function Intro(){
     return(
         <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
+        <img className="rounded-full w-40 md:w-60 lg:w-65" 
+                alt="gif" 
+                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm01YjMwcWluN2liaTJreGY4OWFiNTkzNmo5N2Z4N29hb2F3emNvcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rhZr8u3cvxe0ksf1ej/giphy.gif"/>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl dark:text-white md:text-4xl mb-1 md:mb-3 font-bold">Eric Hansson</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl dark:text-white md:text-4xl mb-1 md:mb-3 font-bold">Eric Hansson</h1>
 
-            <p className="text-base md:mb-2">NCAA I&II Athlete, Student, Lead Intern</p>
+            <p className="text-base md:mb-2">Former NCAA I&II Athlete, College Graduate</p>
 
             <p className="text-sm w-100 md:w-120 lg:w-150 m-2 md:mb-3">
             Hello there! My name is Eric, and I'm a senior at Lindenwood University studying in Computer Science.
