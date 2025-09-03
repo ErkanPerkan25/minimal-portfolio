@@ -3,11 +3,11 @@ import React from "react";
 function Intro(){
     return(
         <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
-        <img className="rounded-full w-40 md:w-60 lg:w-65" 
+        <img className="rounded-full h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8" 
                 alt="profile picture" 
                 src="assets/profile_pic2.jpg"/>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl dark:text-white md:text-4xl mb-1 md:mb-3 font-bold">Eric Hansson</h1>
+            <h1 className="text-center text-3xl md:text-4xl lg:text-5xl dark:text-white md:text-4xl mb-1 md:mb-3 font-bold">Eric Hansson</h1>
 
             <p className="text-base md:mb-2">Former NCAA Athlete I & II , Undergrad Graduate, Freelancer</p>
 
