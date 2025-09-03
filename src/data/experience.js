@@ -1,9 +1,10 @@
 export default [
     {
-        title:"Leader Intern / Data Scientist",
+        title:"Project Leader",
         company:"Lindenwood Men's Baseball",
-        desc: [`Engineered and maintained full-stack web analytics platforms that deliver real-time 
-            pitching and batting KPIs, directly elevating training effectiveness and in-game decision-making.`, 
+        desc: [
+            ` Engineered and lead a full-stack web analytics platforms that deliver real-time pitching and
+            batting KPIs, directly elevating training effectiveness and in-game decision-making.`, 
             `Produced advanced sabermetric reports for coaches and athletes, enabling data-backed performance evaluations and lineup optimizations.`,
             `Partnered with strength & conditioning staff and sports-science faculty to design data-driven athlete development programs.`,
             `Led data science camps, mentoring high-school students and promoting STEM careers, which increased student interest and participation in STEM fields.`

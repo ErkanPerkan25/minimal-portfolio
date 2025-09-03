@@ -12,10 +12,10 @@ export default [
         link: "https://github.com/ErkanPerkan25/minimal-portfolio",
     },
     { 
-        title: "Simple Web Server",
+        title: "HTTP Server",
         imgUrl: "assets/web_server.jpg",
-        stack: ["C++"],
-        link: "https://github.com/ErkanPerkan25/simple_web_server",
+        stack: ["C/C++, Cmake, Docker, Bash"],
+        link: "https://github.com/ErkanPerkan25/http_server",
     },
     {
         title: "LogiQuest",
