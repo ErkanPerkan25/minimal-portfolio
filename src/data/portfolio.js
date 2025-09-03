@@ -14,13 +14,13 @@ export default [
     { 
         title: "HTTP Server",
         imgUrl: "assets/web_server.jpg",
-        stack: ["C/C++, Cmake, Docker, Bash"],
+        stack: ["C/C++", "Cmake", "Docker", "Bash"],
         link: "https://github.com/ErkanPerkan25/http_server",
     },
     {
         title: "LogiQuest",
         imgUrl: "assets/logo.png",
-        stack: ["Java", "JavFX", "Maven"],
+        stack: ["Java", "JavaFX", "Maven", "JSON"],
         link: "https://github.com/AlexDorian7/dragon-score",
     },
     {
