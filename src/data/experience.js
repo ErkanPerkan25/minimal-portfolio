@@ -1,12 +1,14 @@
 export default [
     {
-        title:"Project Leader",
+        title:"Technical Lead Intern",
         company:"Lindenwood Men's Baseball",
         desc: [
-            `I collaborated, engineered, and led a full‑stack web analytics platform that delivered real‑time pitching and batting KPIs and higher team performance.`, 
-            `Designed REST APIs in R and Python with secure data handling to handle backend requests and database queries.`,
-            `Managed version control with Git branching workflows and basic CI build checks for reliable developments.`,
-            `Mentored high-school students in data science camps which increased student interest and participation in STEM fields.`
+            `Developed and maintained a full-stack web-application analytics platform in first React and Express.JS, and
+             then R and Shiny that delivered real-time pitching and batting KPIs which increased team performance for
+             Lindenwood Men’s baseball.`, 
+            `Built REST APIs in R and Python for automated handling of backend processes and data handling to a PostgreSQL database for analytics and storage of data`,
+            `Managed version control that reduced downtime with Git branching workflows and basic CI build checks for
+            a reliable development and production environment.`,
         ],
         location: "Saint Charles, MO",
         time: "Jan. 2024 - May 2025",
