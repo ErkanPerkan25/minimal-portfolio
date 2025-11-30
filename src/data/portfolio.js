@@ -28,6 +28,12 @@ export default [
         imgUrl: "assets/rust_crab.png",
         stack: ["Rust"],
         link: "https://github.com/ErkanPerkan25/cli_utilites",
+    },
+    {
+        title: "Arcana Notes",
+        imgUrl: "assets/arcana_notes.png",
+        stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+        link: "https://arcananotes.vercel.app/",
     }
 
 ]
