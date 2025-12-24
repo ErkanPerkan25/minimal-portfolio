@@ -3,12 +3,13 @@ export default [
         title:"Technical Lead Intern",
         company:"Lindenwood Men's Baseball",
         desc: [
-            `Developed and maintained a full-stack web-application analytics platform in first React and Express.JS, and
-             then R and Shiny that delivered real-time pitching and batting KPIs which increased team performance for
-             Lindenwood Men’s baseball.`, 
-            `Built REST APIs in R and Python for automated handling of backend processes and data handling to a PostgreSQL database for analytics and storage of data`,
-            `Managed version control that reduced downtime with Git branching workflows and basic CI build checks for
-            a reliable development and production environment.`,
+            `Developed and maintained a full-stack web-application analytics platform in first React and Express.JS, and 
+            then R and Shiny. Which processed 10,000+ data points that delivered real-time pitching and batting KPIs which
+            increased team performance for Lindenwood Men’s baseball.`, 
+            `Built and deployed REST APIs in R and Python automating backend data pipelines processes to the 
+            PostgreSQL database for analytics and storage of data reducing manual data processing by 75%.`,
+            ` Managed version control with Git branching workflows and basic CI build, achieving 99% up-time and 
+            eliminated production deployment failures.`,
         ],
         location: "Saint Charles, MO",
         time: "Jan. 2024 - May 2025",
@@ -17,9 +18,10 @@ export default [
         title:"IT-Technican",
         company:"Avatara",
         desc:[
-            `Delivered Tier‑1/2 support for 80+ enterprise clients, provisioning, deploying software, and resolving incidents via live chat.`,
-            `Executed large-scale VM migrations and company-wide software upgrades with zero unplanned downtime.`,
-            `Resolved proactive technical issues and troubleshooting guides, cutting average ticket resolution time by 20%.`
+            ` Provided technical support for 80+ enterprise clients resolving 300+ tickets with 95% resolution rate through 
+            live chat and remote troubleshooting.`,
+            `Executed large-scale VM migrations over entire enterprise software deployments and upgrades with zero unplanned downtime.`,
+            `Developed troubleshooting documentation and automated scripts that reduced the average ticket resolution time by 20%.`
         ],
         location: "St.Louis, MO",
         time: "Oct. 2022 - Dec. 2023",
