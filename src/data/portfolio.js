@@ -34,6 +34,11 @@ export default [
         imgUrl: "assets/arcana_notes.png",
         stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
         link: "https://arcananotes.vercel.app/",
-    }
-
+    },
+    {
+        title: "Shell Program",
+        imgUrl: "assets/command_prompt_icon.png",
+        stack: ["C++",],
+        link: "https://github.com/ErkanPerkan25/Shell_program_project",
+    },
 ]
