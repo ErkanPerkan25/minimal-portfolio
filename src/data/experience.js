@@ -1,6 +1,6 @@
 export default [
     {
-        title:"Technical Lead Intern",
+        title:"Full-Stack Developer Intern",
         company:"Lindenwood Men's Baseball",
         desc: [
             `Developed and maintained a full-stack web-application analytics platform in first React and Express.JS, and 
@@ -18,10 +18,10 @@ export default [
         title:"IT-Technican",
         company:"Avatara",
         desc:[
-            ` Provided technical support for 80+ enterprise clients resolving 300+ tickets with 95% resolution rate through 
-            live chat and remote troubleshooting.`,
-            `Executed large-scale VM migrations over entire enterprise software deployments and upgrades with zero unplanned downtime.`,
-            `Developed troubleshooting documentation and automated scripts that reduced the average ticket resolution time by 20%.`
+            ` Provided tier 1–2 technical support for 80+ enterprise clients resolving 200+ tickets with 95% resolution rate and
+            lowered resolution time by 20%.`,
+            `Executed large-scale VM migrations for enterprise software deployments and upgrades with no unplanned downtime.`,
+            `Installed, configured, and troubleshoot software for users, and ensured maintenance to prevent breakdowns.`
         ],
         location: "St.Louis, MO",
         time: "Oct. 2022 - Dec. 2023",
