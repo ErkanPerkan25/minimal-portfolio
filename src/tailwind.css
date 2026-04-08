@@ -1,2 +1,27 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-display: "Ubuntu", sans-serif;
+
+    --animate-typing: typing 2s steps(11) forwards, blink .7s step-end infinite;
+
+    @keyframes typing{
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    };
+
+    @keyframes blink{
+        0%, 100%{
+            border-color: transparent;
+        }
+        50% {
+            border-color: white;
+        }
+    }
+}
