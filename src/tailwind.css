@@ -7,6 +7,7 @@
 
     --animate-typing: typing 2s steps(11) forwards, blink .7s step-end infinite;
 
+
     @keyframes typing{
         from {
             width: 0%;

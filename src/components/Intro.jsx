@@ -2,8 +2,9 @@ import React from "react";
 
 function Intro(){
     return(
-        <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
-        <img className="rounded-full h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8" 
+        <div className="flex items-center justify-center flex-col text-center p-10">
+        
+            <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8 transition transform-gpu hover:ease-in hover:scale-125" 
                 alt="profile picture" 
                 src="assets/profile_pic2.jpg"/>
 

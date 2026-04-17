@@ -8,9 +8,11 @@ import Portfolio from "./components/Portfolio"
 import Experience from "./components/Experience"
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Projects from './pages/Projects'
 
 function App() {
     const [theme, setTheme] = useState(null);
+    const [token, setToken] = useState("");
 
     useEffect(() =>{
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
@@ -60,11 +62,11 @@ function App() {
 
 
     return (
-        <div className='w-full bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter transition-colors duration-300 ease-in'>
+        <div className='w-full bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter transition-colors duration-200 ease-in'>
             <BrowserRouter>
                 <div className='flex flex-col min-h-screen'>
                     <header className='w-full backdrop-blur-sm'>
-                        <nav className='w-max py-4 ml-auto mr-auto'>
+                        <nav className='w-max py-8 ml-auto mr-auto'>
                            <div className='flex items-center justify-between'> 
                                 <div className='flex items-center space-x-1'>
                                     <Link 
@@ -73,21 +75,36 @@ function App() {
                                     >Home</Link> | {" "}
 
                                     <Link 
-                                        className='px-3 py-2'
+                                        className='px-3 py-2 transition-colors relative text-gray dark:text-white'
                                         to="/about"
                                     >About</Link> | {" "}
 
 
                                     <Link 
-                                        className='px-3 py-2'
+                                        className='px-3 py-2 transition-colors relative text-gray dark:text-white'
                                         to="/projects"
                                     >Projects</Link> | {" "}
                                     
                                     <Link 
-                                        className='px-3 py-2'
-                                        to="/projects"
-                                    >Gear</Link>
+                                        className='px-3 py-2 transition-colors relative text-gray dark:text-white'
+                                        to="/gear"
+                                    >Gear</Link> | {" "}
+                                    
+                                    <Link 
+                                        className='px-3 py-2 transition-colors relative text-gray dark:text-white'
+                                        to="/contact"
+                                    >Contact</Link>
 
+
+                                    <div>
+                                        <button />
+                                        <ul>
+                                            <li>
+                                                <Link to="/" />
+                                            </li>
+
+                                        </ul>
+                                    </div>
                                 </div>
 
                             
@@ -104,11 +121,13 @@ function App() {
                         </nav>
                     </header>
 
-                    <main className='@container flex-grow'>
-                        <div className='w-max mr-auto ml-atuo'>
+                    <main className='flex w-210 mx-auto my-8'>
+                        <div className='w-400 mr-auto ml-atuo'>
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/about" element={<About />} />
+                                <Route path="/projects" element={<Projects />} /> 
+                                <Route path='/callback' element={<Home />} />
                             </Routes>
                         </div>
                     </main>
