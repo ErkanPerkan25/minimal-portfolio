@@ -4,7 +4,6 @@ import './tailwind.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Intro from "./components/Intro"
-import Portfolio from "./components/Portfolio"
 import Experience from "./components/Experience"
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -121,8 +120,8 @@ function App() {
                         </nav>
                     </header>
 
-                    <main className='flex w-210 mx-auto my-8'>
-                        <div className='w-400 mr-auto ml-atuo'>
+                    <main className='flex w-250 mx-auto my-8'>
+                        <div className='mx-auto text-lg'>
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/about" element={<About />} />

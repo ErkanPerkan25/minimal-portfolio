@@ -9,7 +9,6 @@ function Home(){
     useEffect(() =>{
         async function getToken(){
             const response = await fetch(`/api/token`);
-            console.log(response.status)
             const json = await response.json();
             setToken(json.access_token);
         }
@@ -36,7 +35,7 @@ function Home(){
                 </div>
 
                 <div>
-                    {(token === '') ? <LoginSpotify /> : <SpotifyCurrent />}
+                    {(token === '') ? <LoginSpotify /> : <SpotifyCurrent token={token}/>}
                 </div>
 
             </div>

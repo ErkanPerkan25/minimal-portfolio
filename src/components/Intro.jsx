@@ -2,28 +2,20 @@ import React from "react";
 
 function Intro(){
     return(
-        <div className="flex items-center justify-center flex-col text-center p-10">
-        
+        <div className="flex items-center justify-center flex-col p-2">
             <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8 transition transform-gpu hover:ease-in hover:scale-125" 
                 alt="profile picture" 
-                src="assets/profile_pic2.jpg"/>
+                src="assets/profile_pic2.jpg"
+            />
 
-            <h1 className="text-center text-3xl md:text-4xl lg:text-5xl dark:text-white md:text-4xl mb-1 md:mb-3 font-bold">Eric Hansson</h1>
-
-            <p className="text-base md:mb-2">Former NCAA Athlete I & II , Undergrad Graduate, Freelancer</p>
-
-            <p className="text-sm md:text-md w-100 md:w-120 lg:w-150 m-2 md:mb-3">
-            Hello there! My name is Eric, and I'm a recent graduate from Lindenwood University with a
-            Bachelor of Science in Computer Science.
-            During my time there I worked as a Project Leader for the Lindenwood's Baseball Data Science Team. 
-            As well as being a D1 student athlete for the Lindenwood  in Swimming & Diving. 
+            <p className="text-sm md:text-md lg:text-lg w-100 md:w-150 lg:w-200 m-2 md:mb-3">
+                I'm a a guy who like softwares, books, the outdoor, and family.
             </p>
-            <br/>
-            <p className="text-sm md:text-md w-100 md:w-120 lg:w-150 m-2 md:mb-3">
-            Being as a student athlete I learned the importance of time managment, language barriers, 
-            and teamwork. I am currently a doing some freelancing work while looking for a entry level job in 
-            the field of Software Engineering.</p>
 
+            <p className="text-sm md:text-md lg:text-lg w-100 md:w-150 lg:w-200 m-2 md:mb-3">
+            Used to be a NCAA Athlete I & II in Swimming & Diving, and 
+            I graduated with a B.S. in Computer Science and love working with software and hardware.
+            </p>
         </div>   
     )
 }

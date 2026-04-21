@@ -1,15 +1,14 @@
 import React from "react";
-import PortfolioItem from "./PortfolioItem";
+import ProjectItem from "./ProjectItem.jsx";
 import portfolio from "../data/portfolio"
 
-function Portfolio(){
+function ProjectList(){
     return(
         <div className="flex flex-col justify-center pt-8">
-            <h1 className="text-xl font-bold">Projects</h1>
             <div className="flex flex-col md:flex-row items-center justify-center pt-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {portfolio.map(project => (
-                        <PortfolioItem
+                        <ProjectItem
                             title={project.title}
                             imgUrl={project.imgUrl}
                             stack={project.stack}
@@ -22,4 +21,4 @@ function Portfolio(){
     )
 }
 
-export default Portfolio;
+export default ProjectList;

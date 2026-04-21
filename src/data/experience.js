@@ -3,13 +3,9 @@ export default [
         title:"Full-Stack Developer Intern",
         company:"Lindenwood Men's Baseball",
         desc: [
-            `Developed and maintained a full-stack web-application analytics platform in first React and Express.JS, and 
-            then R and Shiny. Which processed 10,000+ data points that delivered real-time pitching and batting KPIs which
-            increased team performance for Lindenwood Men’s baseball.`, 
-            `Built and deployed REST APIs in R and Python automating backend data pipelines processes to the 
-            PostgreSQL database for analytics and storage of data reducing manual data processing by 75%.`,
-            ` Managed version control with Git branching workflows and basic CI build, achieving 99% up-time and 
-            eliminated production deployment failures.`,
+            `Built and maintained a real-time full-stack web application processing 10,000+ data points and KPIs, used by coaching staff to improve team performance.`, 
+            `Automated backend data pipelines with REST APIs in R and Python, reducing processing time from 1 hour to 10 minutes.`,
+            `Managed Git branching workflows and CI/CD pipelines, achieving, 99% uptime with zero production deployment failure.`,
         ],
         location: "Saint Charles, MO",
         time: "Jan. 2024 - May 2025",
@@ -18,10 +14,9 @@ export default [
         title:"IT-Technican",
         company:"Avatara",
         desc:[
-            ` Provided tier 1–2 technical support for 80+ enterprise clients resolving 200+ tickets with 95% resolution rate and
-            lowered resolution time by 20%.`,
+            `Provided tier 1-2 technical support for 80+ enterprise clients resolving 200+ tickets with 95% resolution rate and lowered resolution time by 20%.`,
             `Executed large-scale VM migrations for enterprise software deployments and upgrades with no unplanned downtime.`,
-            `Installed, configured, and troubleshoot software for users, and ensured maintenance to prevent breakdowns.`
+            `Installed and configured software on the Virtual Machines with remote control, as well as troubleshooting to ensure maintenance to prevent breakdowns.`
         ],
         location: "St.Louis, MO",
         time: "Oct. 2022 - Dec. 2023",
