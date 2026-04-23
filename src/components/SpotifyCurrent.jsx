@@ -1,32 +1,40 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function SpotifyCurrent({token}){
+    const [songUri, setSongUri] = useState("");
+
     useEffect(() =>{
-        const test = async() =>{
-            const response = await fetch("/api/current_track");
-            const json = await response.json();
-            console.log(json);
+        const getCurrentlyPlaying = async() =>{
+            await fetch("/api/current_track")
+                .then(response => response.json())
+                .then(data =>{
+                    setSongUri(data.song_uri);
+                })
+                .catch(error =>{
+                    throw error;
+                })
         }
 
-        if(token){
-            test();
-        }
+        getCurrentlyPlaying();
 
-
-        /*
+        console.log(songUri);
+        
+        
         const script = document.createElement("script");
         script.src = "https://open.spotify.com/embed/iframe-api/v1"
         script.async = true;
 
         document.body.appendChild(script);
-
-        window.onSpotifyIframeApiReady = (IFrameAPI) =>{
-            const element = document.getElementById("embed-iframe");
-            const options = {
-                uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
-            };
-            const callback = (EmbedController) =>{};
-            IFrameAPI.createController(element, options, callback);
+        
+        if(songUri){
+            window.onSpotifyIframeApiReady = (IFrameAPI) =>{
+                const element = document.getElementById("embed-iframe");
+                const options = {
+                    uri: songUri
+                };
+                const callback = (EmbedController) =>{};
+                IFrameAPI.createController(element, options, callback);
+            }
         }
         
         const playerScript = document.createElement("script");
@@ -40,9 +48,9 @@ function SpotifyCurrent({token}){
         return () =>{
             document.body.removeChild(script);
         }
-        */
-    }, []);
 
+    }, [songUri]);
+    
     return(
         <div>
             <div id="embed-iframe">
