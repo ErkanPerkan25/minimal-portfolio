@@ -1,5 +1,16 @@
 export default [
     {
+        title: "Backend Developer",
+        company:"Lindenwood University - Department of Philosophy",
+        desc: [
+            `Collaborated in a 7-member Agile Scrum team that develop a cross-platform desktop application with Java and JavaFX to deliver a gamified logic learning tool for 200+ college students.`, 
+            `Secured user data and point-tracking-system by implementing an AES-256 encryption algorithm module in Java using javax.crypto library.`,
+            `Wrote unit tests to ensure code reliability and package installers for Windows, macOS, and Linux, achieving 95% CI build success.`,
+        ],
+        location: "Saint Charles, MO",
+        time: "Jan. 2025 - May 2025",
+    },
+    {
         title:"Full-Stack Developer Intern",
         company:"Lindenwood Men's Baseball",
         desc: [
@@ -21,6 +32,7 @@ export default [
         location: "St.Louis, MO",
         time: "Oct. 2022 - Dec. 2023",
     },
+    /*
     {
         title:"Consultant",
         company:"Cloetta AB",
@@ -32,4 +44,5 @@ export default [
         location: "Solna, Sweden",
         time: "Dec. 2018 - Aug. 2023",
     },
+    */
 ]

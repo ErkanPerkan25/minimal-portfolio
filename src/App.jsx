@@ -3,11 +3,9 @@ import {BrowserRouter, Routes, Route, Navigate, Link} from "react-router-dom"
 import './tailwind.css'
 import Home from './pages/Home'
 import About from './pages/About'
-import Intro from "./components/Intro"
-import Experience from "./components/Experience"
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Projects from './pages/Projects'
+import Contact from './components/ContactForm'
 
 function App() {
     const [theme, setTheme] = useState(null);
@@ -61,7 +59,7 @@ function App() {
 
 
     return (
-        <div className='w-full bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter transition-colors duration-200 ease-in'>
+        <div className='w-full bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter transition-colors duration-400 ease-in'>
             <BrowserRouter>
                 <div className='flex flex-col min-h-screen'>
                     <header className='w-full backdrop-blur-sm'>
@@ -82,7 +80,7 @@ function App() {
                                     <Link 
                                         className='px-3 py-2 transition-colors relative text-gray dark:text-white'
                                         to="/projects"
-                                    >Projects</Link> | {" "}
+                                    >Projects</Link>| {" "}
                                     
                                     <Link 
                                         className='px-3 py-2 transition-colors relative text-gray dark:text-white'
@@ -120,12 +118,13 @@ function App() {
                         </nav>
                     </header>
 
-                    <main className='flex w-250 mx-auto my-8'>
+                    <main className='flex lg:w-275 mx-auto my-8'>
                         <div className='mx-auto text-lg'>
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/about" element={<About />} />
                                 <Route path="/projects" element={<Projects />} /> 
+                                <Route path="/contact" element={<Contact /> } />
                                 <Route path='/callback' element={<Home />} />
                             </Routes>
                         </div>
@@ -135,26 +134,6 @@ function App() {
 
             <Footer />
         </div>
-        /*
-        <div className='App'>
-            <button
-                type="button"
-                onClick={handleTheme}
-                className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg rounded-md"
-            >
-                {theme === "dark" ? sun : moon}
-            </button>
-            <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-                <div className='max-w-5xl w-11/12 mx-auto'>
-                    <Intro />
-                    <Portfolio />
-                    <Experience />
-                    <Contact />
-                    <Footer />
-                </div>
-            </div>
-        </div>
-        */
     )
 }
 

@@ -11,7 +11,7 @@ function ProjectItem ({title, imgUrl, stack, link}){
                 <img src={imgUrl} 
                 alt="portfolio"
                 className="w-full h-36 md:h-48 object-cover cursor-pointer"/>
-                <div className="w-full h-full p-4 bg-stone-700">
+                <div className="w-full h-full p-4 bg-white dark:bg-stone-700">
                     <h3 className="tex-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">{title}</h3>
                     <p className="flex flex-wrap gap-2 items-center justify-start text-sm md:text-md lg:text-lg dark:text-white py-auto">
                         {stack.map(item => (

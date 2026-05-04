@@ -3,7 +3,7 @@ import ExperienceItem from "./ExperienceItem";
 
 function Experience(){
     return(
-        <div className="flex flex-col">
+        <div className="flex flex-col animate-fade-in-up delay-350">
             <h1 className="text-lg md:text-xl font-bold">Professional Experience</h1>
             <div className="flex flex-col md:flex-row items-center justify-center">
                 <div className="">

@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
+import SkeletonLoader from "./SkeletonLoader";
 
-function SpotifyCurrent({token}){
+function SpotifyCurrent(){
     const [songUri, setSongUri] = useState("");
+    const width = 525;
+    const height = 500;
 
     useEffect(() =>{
         const getCurrentlyPlaying = async() =>{
-            await fetch("/api/current_track")
+            await fetch("/api/current_track", {
+                    method: "GET"
+                })
                 .then(response => response.json())
                 .then(data =>{
                     setSongUri(data.song_uri);
@@ -28,18 +33,20 @@ function SpotifyCurrent({token}){
         
         if(songUri){
             window.onSpotifyIframeApiReady = (IFrameAPI) =>{
-                const element = document.getElementById("embed-iframe");
+                const element = document.getElementById("current-song-embed-iframe");
                 const options = {
-                    uri: songUri
+                    uri: songUri,
+                    width: width, 
+                    height: height
                 };
                 const callback = (EmbedController) =>{};
                 IFrameAPI.createController(element, options, callback);
             }
         }
         
-        const playerScript = document.createElement("script");
-        playerScript.src = "https://sdk.scdn.co/spotify-player.js";
-        playerScript.async = true;
+        //const playerScript = document.createElement("script");
+        //playerScript.src = "https://sdk.scdn.co/spotify-player.js";
+        //playerScript.async = true;
 
         //document.body.appendChild(playerScript);
         
@@ -50,13 +57,23 @@ function SpotifyCurrent({token}){
         }
 
     }, [songUri]);
-    
-    return(
-        <div>
-            <div id="embed-iframe">
+
+    if(songUri){
+        return(
+            <div>
+                <h1 className="m-2 font-bold text-xl">Currently listening to: </h1>
+                <div id="current-song-embed-iframe"></div>
             </div>
-        </div>
-    )
+        )
+    }
+    else{
+        return(
+            <div>
+                <SkeletonLoader width={300} height={200}/>
+            </div>
+        )
+    }
+    
 }
 
 export default SpotifyCurrent;

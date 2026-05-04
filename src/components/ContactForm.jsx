@@ -3,9 +3,9 @@ import React from "react";
 function Contact(){
     return (
         <div className="flex flex-col items-center justify-center pt-5">
-            <h2>Want to get in contact? Send me an email.</h2>
+            <h1 className="text-xl font-bold">Youy want to get hold of me? Just fill out this for and let's have chat.</h1>
             <form action="https://getform.io/f/9cd7a7fa-4a01-4677-92ab-89e2d68829ae" method="POST"
-                className="grid grid-cols-1 w-80 md:w-100 lg:w-125 pt-1">
+                className="grid grid-cols-1 w-80 md:w-125 lg:w-175 pt-1 mt-10">
                 <input
                     name="name"
                     className="w-full h-12 border-1 rounded-md mt-3 p-1"
@@ -27,7 +27,7 @@ function Contact(){
             
                 <button type="submit" 
                     className="w-max rounded-md p-2 mt-5 text-white bg-linear-to-r from-yellow-500 to-pink-500 drop-shadow-md hover:stroke-white">
-                    Work with me
+                    Submit
                 </button>
             </form>
         </div>
