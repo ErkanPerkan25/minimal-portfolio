@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectItem ({title, imgUrl, stack, link}){
     return (
-        <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden transition transform-gpu hover:ease-in hover:scale-125">
+        <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden transition transform-gpu hover:ease-in hover:scale-110">
             <a
                 href={link}
                 target="_blank"

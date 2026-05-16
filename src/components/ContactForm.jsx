@@ -3,9 +3,9 @@ import React from "react";
 function Contact(){
     return (
         <div className="flex flex-col items-center justify-center pt-5">
-            <h1 className="text-xl font-bold">Youy want to get hold of me? Just fill out this for and let's have chat.</h1>
+            <h1 className="text-xl font-bold animate-fade-in-up">Youy want to get hold of me? Just fill out this for and let's have chat.</h1>
             <form action="https://getform.io/f/9cd7a7fa-4a01-4677-92ab-89e2d68829ae" method="POST"
-                className="grid grid-cols-1 w-80 md:w-125 lg:w-175 pt-1 mt-10">
+                className="grid grid-cols-1 w-80 md:w-125 lg:w-175 pt-1 mt-10 animate-fade-in-up delay-300">
                 <input
                     name="name"
                     className="w-full h-12 border-1 rounded-md mt-3 p-1"

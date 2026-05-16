@@ -34,7 +34,7 @@ function SpotifyTopChart({token}){
                 const options = {
                     uri: uri,
                     width: 300,
-                    height: 100,
+                    height: 125,
                 };
                 const callback = (EmbedController) =>{
                     EmbedController.loadUri(uri);

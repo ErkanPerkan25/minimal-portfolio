@@ -9,6 +9,13 @@ function Home(){
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     
     useEffect(() =>{
+
+        const script = document.createElement("script");
+        script.src = "https://open.spotify.com/embed/iframe-api/v1"
+        script.async = true;
+
+        document.body.appendChild(script);
+
         const getToken = async() =>{
             const response = await fetch(`/api/token`);
             const json = await response.json();
@@ -32,6 +39,10 @@ function Home(){
 
         authCheck();
         
+        return () =>{
+            document.body.removeChild(script);
+        }
+        
     }, [token]);
 
     return (
@@ -40,7 +51,7 @@ function Home(){
                 <h1 className="w-auto text-2xl dark:border-black animate-typing overflow-hidden whitespace-nowrap border-r-2">Hello, Eric here</h1>
             </div>
             <div className="my-5 animate-fade-in-up delay-150">
-                <p>Just an average CS graduate struggling to land a Software Engineering job, here is my journey.</p>
+                <p>Just a dedicated person to my craft, outdoors, and family.</p>
             </div>
 
             <div className="flex flex-col md:flex-row gap-5 animate-fade-in-up">
@@ -58,7 +69,10 @@ function Home(){
                 </div>
             </div>
 
-            <div >
+            <div className="animate-fade-in-up">
+                    {!isAuthenticated ? "" : 
+                        ""
+                    }
             </div>
         </div>
     ) 
