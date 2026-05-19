@@ -5,11 +5,11 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Footer from './components/Footer'
 import Projects from './pages/Projects'
-import Contact from './components/ContactForm'
+import Contact from './pages/Contact'
+import Resume from './pages/Resume'
 
 function App() {
     const [theme, setTheme] = useState(null);
-    const [token, setToken] = useState("");
 
     useEffect(() =>{
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
@@ -84,8 +84,8 @@ function App() {
                                     
                                     <Link 
                                         className='px-3 py-2 transition-colors relative text-gray dark:text-white'
-                                        to="/gear"
-                                    >Gear</Link> | {" "}
+                                        to="/resume"
+                                    >Resume</Link> | {" "}
                                     
                                     <Link 
                                         className='px-3 py-2 transition-colors relative text-gray dark:text-white'
@@ -119,13 +119,15 @@ function App() {
                     </header>
 
                     <main className='flex lg:w-275 mx-auto my-8'>
-                        <div className='mx-auto text-lg'>
+                        <div className='lg:w-250 mx-auto text-lg'>
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/about" element={<About />} />
                                 <Route path="/projects" element={<Projects />} /> 
+                                <Route path='/resume' element={<Resume />} />
                                 <Route path="/contact" element={<Contact /> } />
                                 <Route path='/callback' element={<Home />} />
+
                             </Routes>
                         </div>
                     </main>

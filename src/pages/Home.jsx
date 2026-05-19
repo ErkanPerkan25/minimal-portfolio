@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SpotifyCurrent from "../components/SpotifyCurrent";
 import SkeletonLoader from "../components/SkeletonLoader";
 import SpotifyTopChart from "../components/SpotifyTopChart";
+import Header from "../components/Header";
 
 
 function Home(){
@@ -47,12 +48,7 @@ function Home(){
 
     return (
         <div className="flex flex-col min-h-screen">
-            <div className="w-max animate-fade-in-up">
-                <h1 className="w-auto text-2xl dark:border-black animate-typing overflow-hidden whitespace-nowrap border-r-2">Hello, Eric here</h1>
-            </div>
-            <div className="my-5 animate-fade-in-up delay-150">
-                <p>Just a dedicated person to my craft, outdoors, and family.</p>
-            </div>
+            <Header />
 
             <div className="flex flex-col md:flex-row gap-5 animate-fade-in-up">
                 <div className="w-100 animate-fade-in-up animate-fade-in-up delay 450">

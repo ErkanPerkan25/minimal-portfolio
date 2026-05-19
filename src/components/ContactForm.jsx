@@ -1,6 +1,5 @@
-import React from "react";
 
-function Contact(){
+function ContactForm(){
     return (
         <div className="flex flex-col items-center justify-center pt-5">
             <h1 className="text-xl font-bold animate-fade-in-up">Youy want to get hold of me? Just fill out this for and let's have chat.</h1>
@@ -34,4 +33,4 @@ function Contact(){
     )
 }
 
-export default Contact;
+export default ContactForm;

@@ -8,12 +8,6 @@ function About(){
             <div>
                 <Intro />
             </div>
-            <br/>
-            <hr className="w-full" />
-            <br/>
-            <div>
-                <Experience />
-            </div>
         </div>
     )
 
