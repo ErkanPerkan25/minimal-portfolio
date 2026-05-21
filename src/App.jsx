@@ -93,15 +93,6 @@ function App() {
                                     >Contact</Link>
 
 
-                                    <div>
-                                        <button />
-                                        <ul>
-                                            <li>
-                                                <Link to="/" />
-                                            </li>
-
-                                        </ul>
-                                    </div>
                                 </div>
 
                             
@@ -118,7 +109,7 @@ function App() {
                         </nav>
                     </header>
 
-                    <main className='flex lg:w-275 mx-auto my-8'>
+                    <main className='flex lg:w-275 mx-auto my-2'>
                         <div className='lg:w-250 mx-auto text-lg'>
                             <Routes>
                                 <Route path="/" element={<Home />} />

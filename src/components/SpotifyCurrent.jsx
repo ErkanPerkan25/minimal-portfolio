@@ -6,6 +6,7 @@ function SpotifyCurrent(){
     const width = 525;
     const height = 500;
 
+
     useEffect(() =>{
         const getCurrentlyPlaying = async() =>{
             await fetch("/api/current_track", {
@@ -35,8 +36,8 @@ function SpotifyCurrent(){
                 const element = document.getElementById("current-song-embed-iframe");
                 const options = {
                     uri: songUri,
-                    width: width, 
-                    height: height
+                    //width: width, 
+                    //height: height
                 };
                 const callback = (EmbedController) =>{
                     EmbedController.loadUri(songUri);
@@ -63,8 +64,8 @@ function SpotifyCurrent(){
 
     if(songUri){
         return(
-            <div>
-                <h1 className="m-2 font-bold text-xl">Currently listening to: </h1>
+            <div className="w-80 md:w-100 lg:w-110 mx-auto">
+                <h1 className="m-2 font-bold text-xl text-center">Currently listening to: </h1>
                 <div id="current-song-embed-iframe"></div>
             </div>
         )

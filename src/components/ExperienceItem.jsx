@@ -2,7 +2,7 @@ import React from "react";
 
 function ExperienceItem({title, company, desc, location, time}){
     return(
-        <li className="w-100 sm:w-130 md:w-150 lg:w-210 lg:w-70 m-3 mx-auto">
+        <li className="w-100 sm:w-140 md:w-160 lg:w-240 lg:w-70 m-3 mx-auto">
             <div>
                 <h3 className="font-bold">{title}</h3>
             </div>

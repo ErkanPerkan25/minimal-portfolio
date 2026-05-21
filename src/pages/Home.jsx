@@ -48,27 +48,14 @@ function Home(){
 
     return (
         <div className="flex flex-col min-h-screen">
+
             <Header />
-
-            <div className="flex flex-col md:flex-row gap-5 animate-fade-in-up">
-                <div className="w-100 animate-fade-in-up animate-fade-in-up delay 450">
-                    <img 
-                        src="assets/eric_in_the_woods(2).jpg" 
-                        className="w-full rounded-lg border-zinc-400"
-                    />
-                </div>
-
-                <div className="my-auto animate-fade-in-up delay-600">
+            <div>
+                <div className="mx-auto animate-fade-in-up delay-600">
                     {!isAuthenticated ? "" : 
                         <SpotifyCurrent />
                     }
                 </div>
-            </div>
-
-            <div className="animate-fade-in-up">
-                    {!isAuthenticated ? "" : 
-                        ""
-                    }
             </div>
         </div>
     ) 
