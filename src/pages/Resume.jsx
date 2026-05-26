@@ -4,7 +4,11 @@ import Skills from "../components/Skills";
 
 function Resume(){
     return(
-        <div>
+        <div className="">
+            <div className="mb-5 mx-auto">
+                <h1 className="text-center mx-auto text-3xl text-bold">eric hansson</h1>
+            </div>
+
             <div className="mb-10">
                 <ResumeInfo />
             </div>

@@ -3,7 +3,21 @@ import React from "react";
 function Intro(){
     return(
         <div className="flex items-center justify-center flex-col p-2 animate-fade-in-up">
-            <div className="flex flex-row m-1 gap-10">
+
+            <div className="text-sm md:text-md lg:text-lg m-1">
+                <p className="text-center">
+                    I'm man who loves to always learn and understand things. From software and complex problems to the outdoors.
+                </p>
+            
+                <br />
+
+                <p className="text-center">
+                    In tech I work to build applications that solves issues help others or finding solutions to problem that occur to me.
+                    I love to work in low-embedded software, but I have experience in both web applications to desktop.
+                </p>
+            </div>
+
+            <div className="flex flex-col lg:flex-row m-1 lg:gap-10">
                 <img className="rounded-2xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8 transition transform-gpu hover:ease-in hover:scale-125
                     " 
                     alt="profile picture" 
@@ -23,7 +37,9 @@ function Intro(){
             
             <div>
                 <p className="text-sm md:text-md lg:text-lg w-100 md:w-150 lg:w-200 m-2 md:mb-3">
-                    I'm just guy who likes to solve complex problems with software. On my freetime I like to be outdoors fishing and being with family.
+                    While I'm not working on tech I like to spend my time outdoors fishing, going on trails, and being with family.
+                    I have interest in deep philosophical books and their meanings, trying to learn and understand more about out
+                    past and the present.
                 </p>
                 <br />
                 <hr/>

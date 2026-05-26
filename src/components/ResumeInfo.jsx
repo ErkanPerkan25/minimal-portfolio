@@ -1,6 +1,6 @@
 function ResumeInfo(){
     return(
-        <div className="w-max flex flex-row gap-10 mx-auto">
+        <div className="w-max flex flex-col md:flex-row gap-5 md:gap-10 mx-auto">
            <div className="flex flex-row">
                 <div className="m-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">

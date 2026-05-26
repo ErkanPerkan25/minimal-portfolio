@@ -5,10 +5,10 @@ function Header(){
         <header className=" m-1">
             <div className="">
                 <div className="w-max animate-fade-in-up">
-                    <h1 className="w-100 md:w-150 lg:w-200 mx-2 text-2xl dark:border-black animate-typing overflow-hidden whitespace-nowrap border-r-2">Hello, Eric here</h1>
+                    <h1 className="w-100 md:w-150 lg:w-200 mx-2 text-2xl text-center dark:border-black animate-typing overflow-hidden whitespace-nowrap border-r-2">Hello, Eric here</h1>
                 </div>
 
-                <div className="w-100 md:w-150 lg:w-200 text-wrap my-5 mx-auto  animate-fade-in-up delay-150">
+                <div className="text-wrap my-5 mx-auto  animate-fade-in-up delay-150">
                     <p className="text-center">I'm a software developer, swim coach, and outdoorsman.</p>
                     <p className="text-center"></p>
                 </div>

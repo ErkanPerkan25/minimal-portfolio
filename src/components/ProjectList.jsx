@@ -7,7 +7,7 @@ function ProjectList(){
     return(
         <div className="flex flex-col justify-center pt-8">
             <div className="flex flex-col md:flex-row items-center justify-center pt-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="m-5 md:m-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
                     {portfolio.map((project, index) => (
                         <ProjectItem
                             title={project.title}
