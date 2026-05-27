@@ -4,13 +4,13 @@ function Header(){
     return(
         <header className=" m-1">
             <div className="">
-                <div className="w-max animate-fade-in-up">
-                    <h1 className="w-100 md:w-150 lg:w-200 mx-2 text-2xl text-center dark:border-black animate-typing overflow-hidden whitespace-nowrap border-r-2">Hello, Eric here</h1>
+                <div className="w-max animate-fade-in-up mx-auto">
+                    <h1 className="mx-2 text-2xl text-center mx-auto dark:border-black animate-typing overflow-hidden whitespace-nowrap border-r-2">Hello, Eric here</h1>
                 </div>
 
-                <div className="text-wrap my-5 mx-auto  animate-fade-in-up delay-150">
+                <div className="text-wrap my-5 mx-auto animate-fade-in-up delay-150">
                     <p className="text-center">I'm a software developer, swim coach, and outdoorsman.</p>
-                    <p className="text-center"></p>
+                    <p className="text-center">Here you will find more about who I am and what I do.</p>
                 </div>
 
                 <div className="w-max flex flex-col md:flex-row gap-5 animate-fade-in-up mx-auto my-auto">
@@ -26,8 +26,8 @@ function Header(){
 
             <div className="m-5 animate-fade-in-up">
                 <p className="text-center">
-                    I build scalable web applications and data-driven solutions that solve real-world problems. And
-                    software that helps focuses on helping people.
+                    I build scalable web applications and data-driven solutions that solve real-world problems. Also
+                    software solutions which focuses on helping or improving peoples lives.
                 </p>
 
                 <p>

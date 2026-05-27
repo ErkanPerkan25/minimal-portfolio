@@ -1,15 +1,18 @@
 import ContactForm from "../components/ContactForm.jsx"
+import ResumeInfo from "../components/ResumeInfo.jsx";
 
 function Contact(){
     return(
         <div>
             <div className="mx-auto">
+                <h1 className="text-center text-2xl mb-5 font-bold">Conact me</h1>
                 <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover object-top mb-8 mx-auto" 
                     alt="profile picture" 
                     src="assets/junior_year_photo_swimming.png"
                 />
             </div>
             <div className="animate-fade-in-up delay-300">
+                <ResumeInfo />
                 <ContactForm />
             </div>
         </div>

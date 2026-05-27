@@ -2,7 +2,7 @@ import React from "react";
 
 function Intro(){
     return(
-        <div className="flex items-center justify-center flex-col p-2 animate-fade-in-up">
+        <div className="flex items-center gap-2 justify-center flex-col p-2 animate-fade-in-up">
 
             <div className="text-sm md:text-md lg:text-lg m-1">
                 <p className="text-center">
@@ -18,18 +18,18 @@ function Intro(){
             </div>
 
             <div className="flex flex-col lg:flex-row m-1 lg:gap-10">
-                <img className="rounded-2xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8 transition transform-gpu hover:ease-in hover:scale-125
-                    " 
+                <img className="rounded-2xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8 transition transform-gpu hover:ease-in hover:scale-110
+                    shadow-2xl" 
                     alt="profile picture" 
                     src="assets/trail_in_missouri.jpg"
                 />
-                <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8 transition transform-gpu hover:ease-in hover:scale-125
-                    " 
+                <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover mb-8 transition transform-gpu hover:ease-in hover:scale-110
+                    shadow-2xl" 
                     alt="profile picture" 
                     src="assets/profile_pic2.jpg"
                 />
-                <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover object-top mb-8 transition transform-gpu hover:ease-in hover:scale-125
-                    " 
+                <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 object-cover object-top mb-8 transition transform-gpu hover:ease-in hover:scale-110
+                    shadow-2xl" 
                     alt="profile picture" 
                     src="assets/eric_with_bass.jpg"
                 />
@@ -41,14 +41,11 @@ function Intro(){
                     I have interest in deep philosophical books and their meanings, trying to learn and understand more about out
                     past and the present.
                 </p>
-                <br />
-                <hr/>
-                <br />
             </div>
-
+            
             <div className="flex flex-row">
                 <div className="w-[50%] flex-col m-1 gap-5 float-left">
-                    <img className="rounded-xl h-40: md:h-60 lg:h-65 w-40 md:w-60 lg:w-65 mx-auto object-cover object-top mb-8 transition transform-gpu hover:ease-in hover:scale-125" 
+                    <img className="rounded-xl h-40: md:h-60 lg:h-65 w-50 md:w-70 lg:w-80 mx-auto shadow-2xl object-cover object-top mb-8 transition transform-gpu hover:ease-in hover:scale-110" 
                         alt="profile picture" 
                         src="assets/junior_year_swimming_vs_mckendre.jpg"
                     />

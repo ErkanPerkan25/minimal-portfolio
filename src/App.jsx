@@ -64,7 +64,7 @@ function App() {
 
 
     return (
-        <div className='w-full bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter transition-colors duration-400 ease-in'>
+        <div className='w-full bg-stone-300 dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter transition-colors duration-400 ease-in'>
             <BrowserRouter>
                 <div className='flex flex-col min-h-screen'>
                     <header className='w-full'>
